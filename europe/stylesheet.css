@@ -1,5 +1,56 @@
-/* Setting the background colour */
+/* Grid styles */
 body{
-  background-color: #752e4d
-  color: rgb(0, 0, 0);
+  background-color: #752e4d;
+  color: #FFFFFF;
+}
+/* Title */
+h1{
+  text-align: center;
+}
+/* Benner styles */
+.banner-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.intro{
+  padding: 20px
+}
+.countries{
+  padding: 20px
+}
+
+a {
+  color: rgb(134, 172, 235);
+}
+
+.info{
+  text-align: center;
+}
+
+/* formatting content-container */
+.content-container{
+  margin-top: 20px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.card{
+  border: 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Dealing with images in cards */
+.card > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card > p{
+  margin-left: 10px;
+}
+
+.card > h3{
+  margin-left: 10px;
 }
