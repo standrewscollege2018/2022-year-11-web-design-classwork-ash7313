@@ -1,0 +1,39 @@
+/* Grid styles */
+
+/* Benner styles */
+.banner-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+  background-color: rgb(197, 12, 43);
+  padding: 20px
+}
+.navbar{
+  background-color: rgb(197, 12, 43);
+  padding: 20px
+}
+
+/* formatting cards in conent area */
+.content-container{
+  margin-top: 20px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+.card{
+  border: 1px solid rgb(197, 12, 43);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Dealing with images in cards */
+.card > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card p {
+  margin-left: 10px;
+}
