@@ -10,13 +10,14 @@ h1{
 /* Benner styles */
 .banner-container{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.intro{
-  padding: 20px
+.left{
+  padding: 20px;
 }
 .countries{
-  padding: 20px
+  padding: 20px;
+  grid-column: span 2;
 }
 
 a {
@@ -53,4 +54,15 @@ a {
 
 .card > h3{
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 920px){
+  .banner-container{
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
+  .left{
+    border: 1px solid;
+    border-radius: 20px;
+  }
 }
